@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiii Cutieee 💕</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+      color: #333;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 100px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+      margin: 30px 0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease;
+    }
+
+    img.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .letter {
+      background: rgba(255,255,255,0.8);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .music {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255,255,255,0.8);
+      padding: 10px 20px;
+      border-radius: 25px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    a {
+      text-decoration: none;
+      color: #ff4b5c;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin: 100px 0 50px;
+      color: white;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Hiii Cutieee <br>
+    <small>LU tani tmro lagi</small>
+  </header>
+
+  <section id="photos">
+    <h2>MOMENTS WITH YOU HEHEHE</h2>
+    <img src="https://i.imgur.com/RODSs3T.jpeg" alt="photo1">
+    <img src="https://i.imgur.com/h8tP63r.jpeg" alt="photo2">
+    <img src="http://i.imgur.com/VGgP2qS.jpeg" alt="photo3">
+    <img src="https://i.imgur.com/Hl74olJ.jpeg" alt="photo4">
+    <img src="https://i.imgur.com/37oAuXO.jpeg" alt="photo5">
+    <img src="https://i.imgur.com/F0NzC7U.jpeg" alt="photo6">
+  </section>
+
+  <section id="letter" class="letter">
+    <h2>Letter for YOU </h2>
+    <p style="color:#555;">Bahahahhahah hello sleepholic 
+Hmmm where should I start from, our call time?, our hangouts?, or maybe our 1st meet?. Hmm so our meet was so epic like I had no awkwardness with you as if I have known you for long and I immediately found you in 1st go lina auda pani. I had so much fun with you that DAY. I wanted every traffic light to be red whenever we reached in traffic but sadly green Mara thyo….LMAOOOO. I was so happy to take you out in evening and night too. THANK YOU FOR LETTING ME TAKE YOU OUT AT NIGHT. HUHU. ANI HAI I was lil scared to ask you for hug but sheer ko kon rok sakta ani HELLL YEA WE HUGGED. U smell so good. I WAS STUNNED BY YOUR BEAUTY TOO KSTO CUTE XAU HAU TIMI apsara ko pari nei ho ki k ho hehe. Also thìs lion was worried bout your leg, leg piece dukhcha bhanera daar thyo u tolerated it tesaile dherai dherai Aasirbadh cha timi lai for future samaye with me plus Im always down to give massage to that leg piece cuz I need you to be my passenger more in Bhaviṣya
+too. Ani I GOT TO KNOW ABOUT YOUR HOBBIES PANI LIKE COLLECTING BUGS, DAMNNN kira  KSTO KOOL HAU ani u like dogs ani your nail arts are SO KOOL TYO TIMLE DEKHAKO plus wala ksto DAMN LASTAI KOOL KID HAU TIMI TA. HOW CAN I FORGET timle mero wish complete gareko PHOTOBOOT DHERAI DHERAI DHANYABADH HAUUU KASAM IM GOING TO KEEP THAT TO ME FOREVER KASAM I LIKED IT SO MUCH AJAI GARNA PARCHA THANK you so much KIDO</p>
+     </section>
+
+  <footer>
+    sakcha ta
+  </footer>
+
+  <audio controls loop>
+  <source src="FrankOcean-Voodoo.mp3" type="audio/mpeg">
+</audio>
+
+
+
+  <script>
+    // Smooth fade-in effect for photos
+    const images = document.querySelectorAll('img');
+    const showOnScroll = () => {
+      images.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          img.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+  </script>
+
+</body>
+</html>
